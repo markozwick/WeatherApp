@@ -6,7 +6,7 @@ import {
 } from 'react-icons/wi';
 
 function Forecast({ data }) {
-  const daily = data.list.slice(1, 8); // still using 3-hour intervals
+  const daily = data.list.slice(1, 8); 
 
   const bgMap = {
   Clear: `${import.meta.env.BASE_URL}images/clear.jpg`,
@@ -15,7 +15,6 @@ function Forecast({ data }) {
   Snow: `${import.meta.env.BASE_URL}images/snow.jpg`,
   Mist: `${import.meta.env.BASE_URL}images/mist.jpg`,
   Fog: `${import.meta.env.BASE_URL}images/fog.jpg`,
-  // Default: `${import.meta.env.BASE_URL}images/default.jpg`,
 };
 
 
