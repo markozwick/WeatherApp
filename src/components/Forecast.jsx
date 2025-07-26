@@ -68,14 +68,16 @@ function Forecast({ data }) {
   const daily = data.list.slice(1, 8); // still using 3-hour intervals
 
   const bgMap = {
-    Clear: '/images/clear.jpg',
-    Clouds: '/images/clouds.jpg',
-    Rain: '/images/rain.jpg',
-    Snow: '/images/snow.jpg',
-    Mist: '/images/mist.jpg',
-    Fog: '/images/fog.jpg',
-    Default: '/images/default.jpg',
-  };
+  Clear: `${import.meta.env.BASE_URL}images/clear.jpg`,
+  Clouds: `${import.meta.env.BASE_URL}images/clouds.jpg`,
+  Rain: `${import.meta.env.BASE_URL}images/rain.jpg`,
+  Snow: `${import.meta.env.BASE_URL}images/snow.jpg`,
+  Mist: `${import.meta.env.BASE_URL}images/mist.jpg`,
+  Fog: `${import.meta.env.BASE_URL}images/fog.jpg`,
+  // Default: `${import.meta.env.BASE_URL}images/default.jpg`,
+};
+
+
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
